@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Getthefluffout.css" />
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Back to Main Website</a>
+    </nav>
+    <!-- Navigation and other common elements -->
+
+    <!-- Project "Croak Clash" -->
+    <section id="croak-clash">
+        <div class="project-details-container">
+            <!-- Croak Clash Poster -->
+            <img src="images/Get the fluff out.png" alt="Croak Clash Poster" class="project-poster" style="width:50%;">
+
+            <!-- Project Description -->
+            <div class="project-description">
+                <h3>Game Concept</h3>
+                    <p>
+                        <ul>
+                            The concept of this game revolves around creating an engaging and educational experience that raises awareness about the importance of adopting pets from shelters instead of purchasing them. 
+                            The game is designed to provide players with insights into the challenges faced by animal shelters and the consequences of pet overpopulation. 
+                        </ul>
+
+                        <ul>
+                            Through a combination of a neutral yet informative approach, the game aims to dispel misconceptions about shelter animals, encourage players to consider adoption, 
+                            and prompt them to contribute either by adopting pets or making donations to shelters.                
+                        </ul>
+                    </p>
+            </div>
+
+            <!-- Your Participation -->
+            <div class="your-participation">
+                <h3>My Participation</h3>
+                <p>  
+                    <ul>
+                        In my role as the project's lead designer, I focused on ensuring effective communication within the team and managing key project documentation. 
+                        I played a pivotal role in maintaining a seamless flow of information among team members, fostering collaboration and synergy.
+                    </ul>
+
+                    <ul>
+                        My responsibilities extended to crafting the Game Design Document (GDD), 
+                        detailing essential game mechanics, and shaping the intricacies of level design. 
+                        This involved a comprehensive approach to capture the essence of the project and provide a solid foundation for its development.
+                    </ul>
+
+                    <!-- <ul> 
+                        Additionally, I maintained regular contact with our client, Sickhouse, located in Enschede, 
+                        where the event unfolded. This communication was vital for aligning our creative vision with the client's expectations, 
+                        ensuring a harmonious and successful collaboration throughout the project.
+                    </ul> -->
+                </p>
+
+                <!-- Image Gallery -->
+                <h3>Design Document</h3>
+                <div class="image-gallery">
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <img src="images/Getthefluffout/DD1.png">
+                            <img src="images/Getthefluffout/DD2.png">
+                            <img src="images/Getthefluffout/DD3.png">
+                            <img src="images/Getthefluffout/DD4.png">
+                            <img src="images/Getthefluffout/DD5.png">
+
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+                    <button class="prev-button" onclick="scrollGallery(-1)">❮</button>
+                    <button class="next-button" onclick="scrollGallery(1)">❯</button>
+                </div>
+
+            </div>
+
+            <div class="Game-flow">
+                <h3>Game Flow</h3>
+                <p>
+                    <ul>
+                        The game initiates with a van delivering animals to the back door. As the player, you make decisions on whether to keep or euthanize each animal.
+                    </ul>
+                    <ul>
+                        Following that, you employ medicine and food to treat the animals. Resources deplete over time, influencing your ability to care for them. Place the healed animals in cages within the limited storage space.
+                    </ul>
+                    <ul>
+ 
+                        NPCs arrive to adopt pets. Skillfully manage NPC interactions to match animals with their preferences. Some NPCs may leave if the waiting time exceeds, impacting your reputation. NPCs provide feedback, expressing happiness or dissatisfaction based on the matches.
+                    </ul>
+                    <ul>
+   
+                        The player loses if Reputation Points drop to zero. Reputation Points increase with successful adoptions and decrease if NPCs leave unhappy.
+                    </ul>
+                    <ul>
+    
+                        The van periodically spawns, dropping off random animals. Optional resources, such as donations, may be part of the van's deliveries, contributing to your income.
+                    </ul>
+                    <ul>
+
+                        Pop-up notifications provide essential information, including NPC preferences, waiting times, and feedback. UI elements display changes in resources and facilitate effective management.
+                    </ul>
+                    <ul>
+
+                        Post-processing elements include animations for animals, cages, and the desk manager. Interactive and decorative furniture differs visually, enhancing the gaming experience. Sound effects, such as animal noises and NPC reactions, along with background music, contribute to the immersive atmosphere.
+                    </ul>
+                </p>
+
+                <div class="image-gallery">
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <img src="images/Getthefluffout/GamePlay.png">
+                            <img src="images/Getthefluffout/GamePlay1.png">
+                        </div>
+                    </div>
+                    <button class="prev-button" onclick="scrollGallery(-1)">❮</button>
+                    <button class="next-button" onclick="scrollGallery(1)">❯</button>
+                </div>
+
+                </div>
+
+                <div class="More-contribution">
+                    <h3>Additional contribution</h3>
+                    <ul>
+                        <li>Playtesting</li>
+                        <li>Schedule</li>
+                        <li>PR</li>
+                    </ul>
+                </div>
+
+                <h3>Campaign ad</h3>
+                <div class="project-media-gif">
+                    <img src="images/Getthefluffout/hashtags.gif" alt="Campaign Ad GIF">
+                </div>
+
+                <!-- Videos or GIFs -->
+                <div class="project-media">
+
+                    <h3>Early GamePlay showcase</h3>
+                    <!-- <video controls width="100%">
+                        <source src="images/CroakClashhGDD/CroakclashShowOff.mp4" type="video/mp4">
+                    </video> -->
+                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/JRh0diMw1po?si=0KjX1GlTM9vQ6gzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Script for image gallery scrolling -->
+    <script>
+        function scrollGallery(direction) {
+            const container = document.querySelector('.scroll-container');
+            const scrollAmount = direction * container.offsetWidth;
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

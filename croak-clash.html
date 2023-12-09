@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="croak-clash.css" />
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Back to Main Website</a>
+    </nav>
+    
+    <!-- Navigation and other common elements -->
+
+    <!-- Project "Croak Clash" -->
+    <section id="croak-clash">
+        <div class="project-details-container">
+            <!-- Croak Clash Poster -->
+            <img src="images/Poster.png" alt="Croak Clash Poster" class="project-poster" style="width:50%;">
+
+            <!-- Project Description -->
+            <div class="project-description">
+                <h2>Croak Clash</h2>
+                <h3>Game Concept</h3>
+                <p>
+                    In a swamp-themed world, there exists a multiplayer game featuring a humanoid frog character.
+                    Within this game, players have the freedom to select from various modes. The available minigames include "King of the Hill," "Flag Capture," and "Tag."
+                    In each minigame, the objective is to accumulate the highest number of points before time runs out, determining the winner.
+                    A leaderboard keeps track of the scores, and after three rounds of the minigame, the ultimate victor is announced.
+                </p>
+            </div>
+
+            <!-- Your Participation -->
+            <div class="your-participation">
+                <h3>My Participation</h3>
+                <p>
+                    As the lead designer of this project, my main task was to keep a smooth flow of communication between the group.
+                    In addition, I was in charge of the documentation of the project, filling up the game design document (GDD), game mechanics, and level design.
+                    Furthermore, I was in contact with our client at the moment, Sickhouse, in Enschede, where the event took place.
+                </p>
+
+                <!-- Image Gallery -->
+                <h4>Game Design Document</h4>
+                <div class="image-gallery">
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 1.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 2.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 3.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 4.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 5.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 6.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 7.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 8.png">
+                            <img src="images/CroakClashhGDD/Croak-clash GDD 9.png">
+
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+                    <button class="prev-button" onclick="scrollGallery(-1)">❮</button>
+                    <button class="next-button" onclick="scrollGallery(1)">❯</button>
+                </div>
+            </div>
+
+            <div class="Game-flow">
+                <h3>Game Flow</h3>
+                <p>
+                    After completing the ideation part and the GDD, it was time to start with the game mechanics. I decided to create a flow chart
+                    that helped with the visualization of the minigame, King Of The Hill.
+                </p>
+                <div class="Game-Flow-image">
+                    <img src="images/CroakClashhGDD/GameFlow.png">
+                </div>
+
+                <div class="More-contribution">
+                    <h3>Additional contribution</h3>
+                    <ul>
+                        <li>Playtesting</li>
+                        <li>Material creation in Adobe Substance Designer</li>
+                        <li>Schedule</li>
+                        <li>PR</li>
+                    </ul>
+                </div>
+
+                <!-- Videos or GIFs -->
+                <div class="project-media">
+                    <h3>Project Media</h3>
+                    <img src="images/CroakClashhGDD/Croakclashshow1.png">
+                    <img src="images/CroakClashhGDD/Croakclashshow2.png">
+                    <img src="images/CroakClashhGDD/Croakclashshow3.png">
+
+                    <!-- Add videos or GIFs here -->
+
+                    <h3>Shader showcase</h3>
+                    <!-- <video controls width="100%">
+                        <source src="images/CroakClashhGDD/ShaderTest.mp4" type="video/mp4">
+                    </video> -->
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/6VkSyQMKLLc?si=mXg7JFR7ytIVincO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                    <h3>Gameplay showcase</h3>
+                    <!-- <video controls width="100%">
+                        <source src="images/CroakClashhGDD/CroakclashShowOff.mp4" type="video/mp4">
+                    </video> -->
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Lmgkey5Idk4?si=DMdy9kLbrFf8Sh6R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Script for image gallery scrolling -->
+    <script>
+        function scrollGallery(direction) {
+            const container = document.querySelector('.scroll-container');
+            const scrollAmount = direction * container.offsetWidth;
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
