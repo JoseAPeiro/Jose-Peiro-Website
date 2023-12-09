@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="mediaqueries.css" /> <!-- Add this line -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jose Peiro</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jose Peiro</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./images/ProfilePicture.png" alt="Jose Peiro profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jose Peiro</h1>
+        <p class="section__text__p2">Game Desginer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./images/Jose-Peiro-CV.pdf')"
+          >
+            Download CV
+          </button> 
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jose-peiro-b533a2199/'"
+          />
+          <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/JoseAPeiro'"
+          />
+        </div>
+      </div>
+    </section>
+<!-- ---------------------------------------------------------- ABOUT---------------------------------------------------------- -->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <!-- <div class="section__pic-container">
+      <img
+        src="./images/ProfilePicture.png"
+        alt="Profile picture"
+        class="about-pic"
+      />
+    </div> -->
+    <div class="about-details-container">
+      <div class="about-container">
+        <div class="details-container">
+          <h3>Education</h3>
+          <p>Creative Media and Games Technology - Saxion University of Applied Science<br />Game Designer</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          From my earliest memories, my passion for games has been a constant flame, igniting my creativity. 
+          I derive genuine joy from the intricate planning and organization of tasks, ensuring that everything flows seamlessly. 
+          Whether it's managing tasks, dealing with documentation, or handling public relations, these aspects come naturally to me. 
+          I thrive in environments that emphasize teamwork, and my commitment to continuous learning propels me to face new challenges with enthusiasm and determination.
+        </p>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#Portfolio'"
+  />
+</section>
+<!-- ---------------------------------------------------------- Portfolio ---------------------------------------------------------- -->
+
+
+      <section id="Portfolio">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Curriculum Vitae</h1>
+        <div class="cv-images-container">
+          <img src="./images/CV-1.png" alt="CV Image 1" class="cv-image">
+          <img src="./images/CV-2.png" alt="CV Image 2" class="cv-image">
+        </div>
+      </section>
+
+    <!-- --------------------------------------------------------- Projects ---------------------------------------------------->
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My </p>
+      <h1 class="title">Projects</h1>
+      <div class="about-containers"> <!-- Updated class name -->
+    <!------------ Project -->
+          <div class="projects-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/Poster.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Portfolio-sub-title project-title">Croak Clash</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./croak-clash.html'"
+              >
+              Learn More
+              </button>
+            </div>
+          </div>
+    <!------------ Project -->
+          <div class="projects-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/PosterEat05.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Portfolio-sub-title project-title">The Big Dive</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./the-big-dive.html'"
+              >
+              Learn More
+              </button>
+            </div>
+          </div>
+    <!------------ Project -->
+          <div class="projects-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/Plush-Down.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Portfolio-sub-title project-title">Plush-Down</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./plush-down.html'"
+              >
+              Learn More
+              </button>
+            </div>
+          </div>
+    <!------------ Project -->
+          <div class="projects-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/Get the fluff out.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Portfolio-sub-title project-title">Get the fluff out!</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./get-the-fluff-out.html'"
+              >
+              Learn More
+              </button>
+            </div>
+        </div>
+    <!------------ Project -->
+          <div class="projects-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/3Dmodels.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Portfolio-sub-title project-title"> 3D models</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./3DModels.html'"
+              >
+              Learn More
+              </button>
+            </div>
+          </div>
+
+
+        <!-- <div class="projects-details-container color-container">
+          <div class="article-container">
+            <img
+              src="./images/Get the fluff out.png"
+              alt="Project 5"
+              class="project-img"
+            />
+          </div>
+          <h2 class="Portfolio-sub-title project-title">Minor Skilled</h2>
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='./croak-clash.html'"
+            >
+            Learn More
+            </button>
+          </div> -->
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-- --------------------------------------------------------- contact -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:josepeiro98@gmail.com">josepeiro98@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jose-peiro-b533a2199/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

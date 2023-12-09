@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="the-big-dive.css" />
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Back to Main Website</a>
+    </nav>
+    <!-- Navigation and other common elements -->
+
+    <!-- Project "Croak Clash" -->
+    <section id="croak-clash">
+        <div class="project-details-container">
+            <!-- Croak Clash Poster -->
+            <img src="images/PosterEat05.png" alt="Croak Clash Poster" class="project-poster" style="width:50%;">
+
+            <!-- Project Description -->
+            <div class="project-description">
+                <h3>Game Concept</h3>
+                <p>
+                    An underwater adventure: the player drives a submarine using the mobile phone as a controller. 
+                    The submarine direction is controlled by the gyroscope of the phone, there is a gas and stop button to either accelerate or stop the submarine. 
+                    In addition, there is a shooting system where the submarine needs to shoot (sea creature) to defend itself. 
+                    Finally, there is a special event where an octopus appears from the back of the submarine and grabs it, 
+                    here the player needs to shake the phone to break free from the octopus.
+                </p>
+            </div>
+
+            <!-- Your Participation -->
+            <div class="your-participation">
+                <h3>My Participation</h3>
+                <p>
+                    In my role as the principal game designer for this project, my primary responsibilities revolved around Environment and Level Design. 
+                    This encompassed tasks such as creating documentation (GDD, SWOT, Reports), implementing assets in Unity, and developing the gameplay and enemy flowchart (shark's AI).    
+                    </p>
+
+                <!-- Image Gallery -->
+                <h3>Game Design Document</h3>
+                <div class="image-gallery">
+                    <div class="scroll-container">
+                        <div class="scroll-content">
+                            <img src="images/TheBigDive/TBD-GDD1.png">
+                            <img src="images/TheBigDive/TBD-GDD2.png">
+                            <img src="images/TheBigDive/TBD-GDD3.png">
+                            <img src="images/TheBigDive/TBD-GDD4.png">
+                            <img src="images/TheBigDive/TBD-GDD5.png">
+                            <img src="images/TheBigDive/TBD-GDD6.png">
+                            <img src="images/TheBigDive/TBD-GDD7.png">
+                            <img src="images/TheBigDive/TBD-GDD8.png">
+                            <img src="images/TheBigDive/TBD-GDD9.png">
+                            <img src="images/TheBigDive/TBD-GDD10.png">
+                            <img src="images/TheBigDive/TBD-GDD11.png">
+                            <img src="images/TheBigDive/TBD-GDD12.png">
+
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+                    <button class="prev-button" onclick="scrollGallery(-1)">❮</button>
+                    <button class="next-button" onclick="scrollGallery(1)">❯</button>
+                </div>
+            </div>
+
+            <div class="Game-flow">
+                <h3>Game Flow</h3>
+                <p>
+                    <ul> 
+                        concluding the ideation phase and finalizing the Game Design Document (GDD), the next step in the development process was to delve into the intricacies of game mechanics.
+                        To facilitate this crucial stage, I opted to construct a detailed flowchart. 
+                        This visual representation proved instrumental in enhancing the conceptualization and 
+                        understanding of both the gameplay dynamics and the artificial intelligence (AI) governing the sharks within the game.
+                    </ul>
+
+                    <ul> 
+                        The flowchart served as a roadmap, offering a systematic depiction of the interplay between various game elements, 
+                        player interactions, and the nuanced behaviors of the in-game sharks. 
+                        This visualization not only provided clarity to the development team but also served as a 
+                        valuable reference throughout the implementation phase. By mapping out the relationships and dependencies within the game mechanics, 
+                        the flowchart became an indispensable tool in ensuring a cohesive and engaging gaming experience.
+                    </ul>
+                </p>
+                <div class="Game-Flow-image">
+                    <img src="images/TheBigDive/Game Flow Summary.png">
+                </div>
+
+                <h3>Game Flow Shark AI</h3>
+                <p>
+
+                </p>
+                <div class="Game-Flow-image">
+                    <img src="images/TheBigDive/SharkAI.png">
+                </div>
+
+                <div class="More-contribution">
+                    <h3>Additional contribution</h3>
+                    <ul>
+                        <li>3D assets creation when needed</li>
+                        <li>Update Planning</li>
+                        <li>Schedule</li>
+                        <li>PR</li>
+                    </ul>
+                </div>
+
+                <!-- Videos or GIFs -->
+                <div class="project-media">
+                    <h3>Project Media</h3>
+                    <img src="images/TheBigDive/Gameplaypic.png">
+                    <img src="images/TheBigDive/Gameplaypic1.png">
+                    <img src="images/TheBigDive/Gameplaypic2.jpg">
+                    <img src="images/TheBigDive/Gameplaypic3.png">
+
+
+                    <!-- Add videos or GIFs here -->
+
+                    <h3>Gameplay showcase</h3>
+                    <!-- <video controls width="100%">
+                        <source src="images/CroakClashhGDD/CroakclashShowOff.mp4" type="video/mp4">
+                    </video> -->
+                    <iframe width="100%" height="515" src="https://www.youtube.com/embed/zESHXUQJDW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Script for image gallery scrolling -->
+    <script>
+        function scrollGallery(direction) {
+            const container = document.querySelector('.scroll-container');
+            const scrollAmount = direction * container.offsetWidth;
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

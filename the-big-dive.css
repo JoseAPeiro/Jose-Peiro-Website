@@ -1,0 +1,164 @@
+/* Add some basic styling to improve readability */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Style for project sections */
+.project-section {
+    margin-bottom: 40px;
+}
+
+/* Style for project details container */
+.project-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style for project posters */
+.project-poster {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for project titles */
+.project-description h2,
+.your-participation h3,
+.game-flow h3,
+.more-contribution h3,
+.project-media h3 {
+    color: #4285f4; /* Google Blue */
+}
+
+/* Style for paragraphs in project details */
+.project-description p,
+.your-participation p,
+.game-flow p {
+    margin-bottom: 15px;
+}
+
+/* Style for lists in additional contributions */
+.more-contribution ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.more-contribution li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.more-contribution li:before {
+    content: "\2022"; /* Bullet point */
+    position: absolute;
+    left: 0;
+    color: #4285f4; /* Google Blue */
+}
+
+/* Style for image galleries */
+.image-gallery {
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.scroll-content {
+    display: flex;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+/* Style for navigation buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+/* Style for Game Flow image container */
+.Game-flow .Game-Flow-image {
+    max-width: 100%;
+    overflow: hidden; /* Ensure the image doesn't overflow its container */
+}
+
+/* Style for Game Flow image */
+.Game-flow .Game-Flow-image img {
+    display: block;
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style for Project Media section */
+.project-media {
+    margin-top: 20px;
+}
+
+.project-media h3 {
+    color: #4285f4; /* Google Blue */
+    margin-bottom: 15px; /* Add spacing between title and content */
+}
+
+.project-media img,
+.project-media video {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Add some spacing between images and videos */
+    display: block; /* Ensure images and videos are displayed as blocks */
+    margin-left: auto; /* Center images and videos */
+    margin-right: auto;
+}
+
+h3 {
+    color: #007bff; /* Change the color to your preference */
+    font-family: 'Arial', sans-serif; /* Change the font family if needed */
+    font-size: 1.5em; /* Adjust the font size as per your design */
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+}
+
+nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}

@@ -1,0 +1,58 @@
+/* projects.css */
+
+/* Apply general styling to the projects section */
+/* #projects {
+    padding: 1rem;
+    background-color: #f8f8f8;
+} */
+
+/* Style the project details containers */
+.projects-details-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the project images */
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style the project titles */
+.project-title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+/* Style the project buttons */
+.project-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #29b995;
+}
+
+nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
