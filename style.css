@@ -164,7 +164,7 @@ section {
 
 .section__pic-container img{
   display: flex;
-  height: 620px;
+  height: 720px;
   width: 420px;
   margin: auto 0;
   box-shadow: 0 0 10px rgba(1, 1, 1, 1); /* Add a subtle shadow */
