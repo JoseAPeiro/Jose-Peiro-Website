@@ -142,7 +142,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 1vh;
+  /* padding-top: 1vh; */
   height: auto;
   margin: 0 10rem;
   box-sizing: border-box;
