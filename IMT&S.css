@@ -1,4 +1,4 @@
-/* Add some basic styling to improve readability */
+    /* Add some basic styling to improve readability */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -30,7 +30,7 @@ body {
 }
 
 /* Style for project titles */
-.project-description h2,
+.project-description h1,
 .your-participation h3,
 .game-flow h3,
 .more-contribution h3,
@@ -170,4 +170,18 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
+}
+
+figure img {
+    width: 80%; /* Adjust this percentage as needed */
+    max-width: 600px; /* Set a max-width if needed */
+    height: auto; /* Keep the aspect ratio intact */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is block-level */
+}
+
+.small-gif {
+    width: 30%; /* Adjust width as needed */
+    height: auto; /* Keeps the aspect ratio */
+    max-width: 300px; /* Optional: set a maximum width */
 }
