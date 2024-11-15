@@ -16,7 +16,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(205, 235, 254);
 }
 
 /* TRANSITION */
@@ -31,6 +31,7 @@ a,
 nav,
 .nav-links {
   display: flex;
+  
 }
 
 nav {
@@ -46,21 +47,23 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: rgb(205, 235, 254);
+  
 }
 
 a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(205, 235, 254);
+  
 }
 
 .logo {
   font-size: 2rem;
-  color: aliceblue;
+  color: rgb(205, 235, 254);
 }
 
 .logo:hover {
@@ -92,6 +95,7 @@ a:hover {
   height: 2px;
   background-color: black;
   transition: all 0.3s ease-in-out;
+  
 }
 
 .menu-links {
@@ -167,7 +171,7 @@ section {
   height: 620px;
   width: 420px;
   margin: auto 0;
-  box-shadow: 0 0 10px rgba(1, 1, 1, 1); /* Add a subtle shadow */
+  box-shadow: 0 0 10px rgb(121, 195, 251); /* Add a subtle shadow */
 }
 
 .section__text {
@@ -191,6 +195,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: rgb(121, 216, 183);
 }
 
 #socials-container {
@@ -226,7 +231,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(121, 195, 251) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -236,20 +241,20 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background:rgb(121, 216, 183);
+  color: rgb(0, 0, 0);
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background:rgb(67, 100, 143);
 }
 
 .btn-color-2 {
-  background: none;
+  background:rgb(121, 216, 183);
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  background:rgb(67, 100, 143);
 }
 
 .btn-container {
@@ -288,17 +293,22 @@ section {
   bottom: 2.5rem;
 }
 
+h1.education {
+  color:rgb(205, 235, 254); /* Replace with your color */
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
 /* Adjust the width of the details container to expand side to side */
 .about-details-container .details-container {
   min-width: 90%; /* Set the desired minimum width in pixels */
   padding: 1.5rem;
-  background: rgb(54, 185, 135);
+  background: rgb(50, 5, 163);
   border-radius: 2rem;
   border: rgb(26, 77, 48) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
   margin: auto; /* Center the container horizontally */
-  /* margin-top: 20px; */
   margin-bottom: 100px;
 }
 
@@ -310,13 +320,13 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 50%;
 }
 
 .section__pic-container {
   height: 400px;
   width: 400px;
-  margin: auto 0;
+  margin: 100px;
 }
 
 /* EXPERIENCE SECTION */
@@ -325,12 +335,12 @@ section {
   position: relative;
 }
 
-.experience-sub-title {
+/* .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
-}
+} */
 
 .experience-details-container {
   display: flex;
@@ -360,6 +370,12 @@ article .icon {
 
 /* PROJECTS SECTION */
 
+#projects .title {
+  color:rgb(205, 235, 254); /* Replace with your color */
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
 #projects {
   position: relative;
 }
@@ -373,7 +389,7 @@ article .icon {
 
 .projects-details-container {
   flex: 0 0 calc(30% - 1rem);
-  background: rgb(89, 158, 149);
+  background: rgb(121, 216, 183);
   border-radius: 10px;
   border: 0.2rem solid rgb(112, 112, 112);
   text-align: center;
@@ -399,39 +415,6 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CV section*/
-
-.cv-container {
-  max-width: 800px; /* Adjust the max-width as needed */
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-  .cv-images-container {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px; /* Adjust margin as needed */
-  }
-}
-
-.cv-images-container {
-  display: flex;
-  justify-content: space-around; /* Adjust as needed for spacing */
-  align-items: center;
-  margin-top: 20px;
-}
-
-.cv-image {
-  max-width: 40%; /* Set maximum width to the container width */
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Remove extra space below the image */
-  margin: 0 auto; /* Center the image */
-  border-radius: 10px; /* Optional: Add rounded corners */
-  box-shadow: 0 0 10px rgb(56, 190, 161); /* Add a subtle shadow */
-
-}
-
 /* CONTACT SECTION */
 
 #contact {
@@ -439,7 +422,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   align-items: center; /* Center content horizontally */
-  height: 90vh;
+  height: 50vh;
   margin-top: 0rem; /* Adjust the margin-top value as needed */
   clear: both; /* Add clear property to ensure it appears below floated items */
 }
@@ -510,11 +493,6 @@ footer p {
   .section-container {
     flex-direction: column;
     margin: 0 20px;
-  }
-
-  .section__pic-container img {
-    width: 100%;
-    height: auto;
   }
 
   section {
@@ -593,4 +571,9 @@ footer p {
   .hamburger-icon span:last-child {
     width: 100%;
   }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(1, 18, 30);
 }
